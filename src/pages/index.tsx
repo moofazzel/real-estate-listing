@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1 className="text-6xl font-bold">initial project with tailwind</h1>
+        <h1 className="text-6xl font-bold">I am gazi jakia App is running </h1>
       </main>
     </>
   );
