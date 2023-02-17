@@ -13,9 +13,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <h1 className="text-6xl font-bold">I am gazi jakia App is running </h1>
-      </main>
+      <>Put Main content Here Just create new branch</>
     </>
   );
 }

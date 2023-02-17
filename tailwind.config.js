@@ -9,7 +9,30 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        main: "#ff5a5f",
+      },
+      fontFamily: {
+        Nunito: ["Nunito", "sans-serif"],
+      },
+    },
+
+    container: {
+      center: true,
+
+      // or have default horizontal padding
+      // padding: "1rem",
+
+      //  breakpoints like bootstrap
+      screens: {
+        xs: "480px",
+        sm: "768px",
+        md: "992px",
+        lg: "1024px",
+        xl: "1440px",
+      },
+    },
   },
   plugins: [],
 };
