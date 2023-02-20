@@ -4,24 +4,43 @@ import Link from "next/link";
 import logo_white from "../../public/logo_white.png";
 import logo from "../../public//logo.svg";
 import { AiOutlineUser, AiOutlinePlus } from "react-icons/Ai";
-import { FaBars, FaUser } from "react-icons/fa";
+import { FaBars, FaUser, FaCaretDown } from "react-icons/fa";
 
 function Navbar() {
   const menuItems = (
     <>
-      <Link className="navHover" href={"#"}>
+      <Link
+        className="navHover flex gap-[3px] items-center hover:text-main"
+        href={"#"}
+      >
         Home
+        <FaCaretDown className="w-2" />
       </Link>
-      <Link className="navHover" href={"#"}>
+      <Link
+        className="navHover flex gap-[3px] items-center hover:text-main"
+        href={"#"}
+      >
         Properties
+        <FaCaretDown className="w-2" />
       </Link>
-      <Link className="navHover" href={"#"}>
+      <Link
+        className="navHover flex gap-[3px] items-center hover:text-main"
+        href={"#"}
+      >
         Members
+        <FaCaretDown className="w-2" />
       </Link>
-      <Link className="navHover" href={"#"}>
+      <Link
+        className="navHover flex gap-[3px] items-center hover:text-main"
+        href={"#"}
+      >
         Pages
+        <FaCaretDown className="w-2" />
       </Link>
-      <Link className="navHover" href={"#"}>
+      <Link
+        className="navHover flex gap-[3px] items-center hover:text-main"
+        href={"#"}
+      >
         Contact
       </Link>
     </>
@@ -29,7 +48,7 @@ function Navbar() {
   return (
     <>
       {/* Navbar */}
-      <div className="bg-blue-200 px-4 md:px-8 border-b-2 mb-4 py-3.5 pt-5 sticky top-0 z-50">
+      <div className="w-full bg-white xl:bg-transparent px-4 md:px-8 py-3.5 pt-5 fixed  top-0 z-50">
         <div className="flex justify-between items-center relative container">
           {/* Mobile menu button */}
           <button className="text-white bg-main p-2.5 text-2xl rounded xl:hidden hover:bg-red-600 transition-all ">
@@ -37,11 +56,24 @@ function Navbar() {
           </button>
 
           <Link href={"/"} className="flex justify-center items-center">
-            <Image width={150} height={47} src={logo} alt="" />
+            <Image
+              className="xl:hidden"
+              width={150}
+              height={47}
+              src={logo}
+              alt=""
+            />
+            <Image
+              className="hidden xl:block"
+              width={150}
+              height={47}
+              src={logo_white}
+              alt=""
+            />
           </Link>
 
-          <div className=" xl:flex hidden items-center gap-6">
-            <nav className="text-base font-semibold text-[#303030] space-x-[3.7rem]  ">
+          <div className="text-[#303030] lg:text-white xl:flex hidden items-center gap-6">
+            <nav className="flex items-center gap-[3.5rem] text-base font-semibold">
               {menuItems}
             </nav>
             <div className="text-md flex gap-7 justify-between items-center">
