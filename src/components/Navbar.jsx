@@ -10,16 +10,12 @@ import { FaBars, FaUser, FaCaretDown } from "react-icons/fa";
 function Navbar() {
   const menuItems = (
     <>
-      <Link
-        className="navHover flex gap-[3px] items-center hover:text-main"
-        href={"#"}
-      >
+      <Link className="navHover hover:text-main" href={"/"}>
         Home
-        <FaCaretDown className="w-2" />
       </Link>
       <Link
         className="navHover flex gap-[3px] items-center hover:text-main"
-        href={"#"}
+        href={"properties"}
       >
         Properties
         <FaCaretDown className="w-2" />
