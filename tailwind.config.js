@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       colors: {
         main: "#ff5a5f",
+        titleColor: "#484848",
       },
       fontFamily: {
         Nunito: ["Nunito", "sans-serif"],
