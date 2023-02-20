@@ -1,3 +1,4 @@
+import Banner from "@/components/banner/Banner";
 import Layout from "@/components/layout/Layout";
 import Head from "next/head";
 
@@ -6,7 +7,7 @@ import Head from "next/head";
 export default function Home() {
   return (
     <Layout>
-      <>Put Main content Here Just create new branch</>
+      <Banner />
     </Layout>
   );
 }
