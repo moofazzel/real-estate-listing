@@ -6,7 +6,8 @@ function Banner() {
           <h1 className="text-white text-6xl font-bold">
             Find Your Dream Home
           </h1>
-          <p className="text-white text-lg font-bold">
+
+          <p className="text-white text-lg font-bold pb-2">
             From as low as $10 per day with limited time offer discounts
           </p>
         </div>
