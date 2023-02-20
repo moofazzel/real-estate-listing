@@ -6,8 +6,8 @@ import error from "../../public/assets/error.png";
 function ErrorPage() {
   return (
     <>
-      <div className="flex flex-col justify-center items-center">
-        <Image src={error} alt="error" />
+      <div className="bg-[#f7f7f7] flex flex-col justify-center items-center">
+        <Image className="max-w-[80%] " src={error} alt="error" />
         <h4
           className="text-5xl font-bold mt-5 mb-3
         "
@@ -18,16 +18,16 @@ function ErrorPage() {
           Sorry but the page you are looking for does not exist, have been
           removed, name changed or is temporarity unavailable.
         </p>
-        <div className="w-96 flex justify-between items-center border border-slate-300 rounded-md mt-7">
+        <div className="w-96 bg-white flex justify-between items-center border border-slate-300 rounded-md mt-7">
           <input
             type="text"
             placeholder="Search"
             name="search"
-            className="w-full focus-visible:outline-none text-[#484848] py-[6px] px-5"
+            className="w-full bg-transparent focus-visible:outline-none text-[#484848] py-[7px] px-5"
           />
           <span className="py-[10px] px-4">
             <button type="submit" className="">
-              <BsSearch className="text-xl" />
+              <BsSearch className="text-xl hover:fill-main transition-all duration-300" />
             </button>
           </span>
           <input
