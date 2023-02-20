@@ -1,9 +1,9 @@
 function Banner() {
   return (
     <>
-      <div className=" heroBanner h-screen w-full flex justify-center items-center ">
+      <div className=" heroBanner h-screen w-full flex justify-center items-center pt-28">
         <div className="text-center">
-          <h1 className="text-white text-6xl font-bold">
+          <h1 className="text-white text-3xl xl:text-6xl font-bold">
             Find Your Dream Home
           </h1>
 
