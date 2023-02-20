@@ -13,3 +13,8 @@ body {
 a {
   transition: 0.3s;
 }
+
+/* Hero banner */
+.heroBanner {
+  background: url(../../public/slider1.jpg);
+}
