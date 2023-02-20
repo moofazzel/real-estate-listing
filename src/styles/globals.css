@@ -18,5 +18,6 @@ a {
 .heroBanner {
   background: url(../../public/slider1.jpg) no-repeat center;
   background-size: cover;
-  box-shadow: inset 0 0 0 2000px rgba(29, 41, 62, 0.6);
+  background: url(../../public/slider1.jpg);
+
 }

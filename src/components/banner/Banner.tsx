@@ -1,3 +1,4 @@
+
 function Banner() {
   return (
     <>
@@ -11,7 +12,6 @@ function Banner() {
             From as low as $10 per day with limited time offer discounts
           </p>
         </div>
-      </div>
     </>
   );
 }
