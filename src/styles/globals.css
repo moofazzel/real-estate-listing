@@ -53,3 +53,9 @@ a {
 .slick-list {
   margin: 0 -10px;
 }
+
+/**********testmonial slider********/
+
+.border_shadow {
+  box-shadow: 2px 2px 45px 11px #e7dfdf;
+}
