@@ -7,8 +7,6 @@ import miami from "../../../public/assets/images/cities/miami.jpg";
 import newyork from "../../../public/assets/images/cities/newyork.jpg";
 import Link from "next/link";
 
-console.log(miami.src);
-
 function PropertiesByCities() {
   interface PropertiesAndCities {
     image: object;

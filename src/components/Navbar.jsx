@@ -1,13 +1,29 @@
+import { useState, useEffect } from "react";
+
 import Image from "next/image";
 import Link from "next/link";
 
 import logo_white from "../../public/logo_white.png";
-import logo from "../../public//logo.svg";
+import logo from "../../public/logo.svg";
 
 import { AiOutlineUser, AiOutlinePlus } from "react-icons/Ai";
 import { FaBars, FaUser, FaCaretDown } from "react-icons/fa";
 
 function Navbar() {
+  const [navCustom, setNavCustom] = useState(false);
+  const listenScrollEvent = () => {
+    window.scrollY > 20 ? setNavCustom(true) : setNavCustom(false);
+  };
+
+  console.log(navCustom);
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => {
+      window.removeEventListener("scroll", listenScrollEvent);
+    };
+  }, []);
+
   const menuItems = (
     <>
       <Link className="navHover hover:text-main" href={"/"}>
@@ -45,23 +61,27 @@ function Navbar() {
   return (
     <>
       {/* Navbar */}
-      <div className="w-full bg-white xl:bg-transparent px-4 md:px-8 py-3.5 pt-5 fixed  top-0 z-50">
+      <div
+        className={`${
+          navCustom ? "bg-white shadow-lg h-20" : "xl:bg-transparent h-32"
+        }  w-full px-4 md:px-8 py-3.5 pt-5 fixed top-0 z-50 transition-all duration-500`}
+      >
         <div className="flex justify-between items-center relative container">
           {/* Mobile menu button */}
-          <button className="text-white bg-main p-2.5 text-2xl rounded xl:hidden hover:bg-red-600 transition-all ">
+          <button className="text-white bg-main p-2 text-2xl rounded xl:hidden hover:bg-red-600 transition-all ">
             <FaBars />
           </button>
 
           <Link href={"/"} className="flex justify-center items-center">
             <Image
-              className="xl:hidden"
+              className={`${navCustom ? "block" : "hidden"}`}
               width={150}
               height={47}
               src={logo}
               alt=""
             />
             <Image
-              className="hidden xl:block"
+              className={`${navCustom ? "hidden" : " block"}`}
               width={150}
               height={47}
               src={logo_white}
@@ -69,7 +89,10 @@ function Navbar() {
             />
           </Link>
 
-          <div className="text-[#303030] lg:text-white xl:flex hidden items-center gap-6">
+          <div
+            className={` ${navCustom ? "text-[#303030]" : " text-white"} 
+               xl:flex hidden items-center gap-6`}
+          >
             <nav className="flex items-center gap-[3.5rem] text-base font-semibold">
               {menuItems}
             </nav>
@@ -92,7 +115,7 @@ function Navbar() {
           {/* mobile menu user button */}
 
           <button className="text-2xl xl:hidden">
-            <FaUser />
+            <FaUser className={navCustom ? "fill-black" : "fill-white"} />
           </button>
         </div>
       </div>
