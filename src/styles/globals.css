@@ -53,3 +53,19 @@ a {
 .slick-list {
   margin: 0 -10px;
 }
+
+/**********testmonial slider********/
+.border_shadow {
+  box-shadow: -1px -11px 36px 11px #e7dfdfc7;
+}
+.arrow_top:before {
+  position: absolute;
+  top: -16px;
+  left: 49%;
+  margin-left: -10px;
+  content: "";
+  display: block;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid white;
+}
