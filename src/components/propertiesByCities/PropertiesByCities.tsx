@@ -37,7 +37,7 @@ function PropertiesByCities() {
   ];
   return (
     <>
-      <div className="bg-white my-10 shadow">
+      <div className="bg-white py-12 shadow">
         <div className="container px-6">
           <div className="text-center mb-5">
             <Title title={"Find Properties in These Cities"} />
