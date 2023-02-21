@@ -19,7 +19,7 @@ const FeaturedProperties = () => {
             <div className=" p-4 ">
               {/* property title */}
               <h3 className="text-lg font-medium text-dark my-3">
-                Diamond Mentor apartment
+                Diamond Mentor jlsdjkhgd
               </h3>
               {/* address */}
               <div className="flex items-center">
