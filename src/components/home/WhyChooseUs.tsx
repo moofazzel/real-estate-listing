@@ -5,17 +5,17 @@ import Title from "../shared/Title";
 function WhyChooseUs() {
   const whyData = [
     {
-      icon: "/assets/icons/high-five.png",
+      icon: "/assets/icons/high-five.svg",
       title: "Trusted By Thousands",
       desc: "Aliquam dictum elit vitae mauris facilisis at dictum vitae mauris urna dignissim donec vel lectus vel felis.",
     },
     {
-      icon: "/assets/icons/high-five.png",
+      icon: "/assets/icons/home.svg",
       title: "Wide Renge Of Properties",
       desc: "Aliquam dictum elit vitae mauris facilisis at dictum vitae mauris urna dignissim donec vel lectus vel felis.",
     },
     {
-      icon: "/assets/icons/high-five.png",
+      icon: "/assets/icons/profit.svg",
       title: "Financing Made Easy",
       desc: "Aliquam dictum elit vitae mauris facilisis at dictum vitae mauris urna dignissim donec vel lectus vel felis.",
     },
@@ -75,9 +75,15 @@ function WhyChooseUs() {
             <Slider {...settings}>
               {whyData.map((d) => {
                 return (
-                  <div className="bg-white pt-10 pb-9 px-11 rounded-[10px] shadow-md shadow-slate-100 border-2 border-slate-200 hover:bg-main group transition-all duration-500">
+                  <div className="bg-white pt-10 pb-9 px-10 rounded-[10px] shadow-md shadow-slate-100 border-2 border-slate-200 hover:bg-main group transition-all duration-500">
                     <div className=" bg-[#FFE8E9] group-hover:bg-white p-10 rounded-full w-fit mx-auto">
-                      <Image width={130} height={130} src={d.icon} alt="" />
+                      <Image
+                        className=""
+                        width={60}
+                        height={60}
+                        src={d.icon}
+                        alt=""
+                      />
                     </div>
                     <div className="text-center mt-8">
                       <h3 className="text-lg font-bold mb-4 group-hover:text-white transition-all duration-300">
