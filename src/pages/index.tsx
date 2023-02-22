@@ -4,6 +4,7 @@ import Layout from "@/components/layout/Layout";
 
 import PropertiesByCities from "@/components/propertiesByCities/PropertiesByCities";
 import TestimonialSlider from "@/components/home/testimonialSlider/TestimonialSlider";
+import WhyChooseUs from "@/components/home/WhyChooseUs";
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -13,6 +14,7 @@ export default function Home() {
       <Banner />
       <FeaturedProperties />
       <PropertiesByCities />
+      <WhyChooseUs />
     </Layout>
   );
 }
