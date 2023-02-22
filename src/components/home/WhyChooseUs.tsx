@@ -72,9 +72,12 @@ function WhyChooseUs() {
 
           <div className=" mt-8">
             <Slider {...settings}>
-              {whyData.map((d) => {
+              {whyData.map((d, i) => {
                 return (
-                  <div className="bg-white pt-10 pb-9 px-11 rounded-[10px] shadow-md shadow-slate-100 border-2 border-slate-200 hover:bg-main group transition-all duration-500 h-auto">
+                  <div
+                    key={i}
+                    className="bg-white pt-10 pb-9 px-11 rounded-[10px] shadow-md shadow-slate-100 border-2 border-slate-200 hover:bg-main group transition-all duration-500 h-auto"
+                  >
                     <div className=" bg-[#FFE8E9] group-hover:bg-white p-10 rounded-full w-fit mx-auto">
                       <Image
                         className=""

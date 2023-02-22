@@ -77,9 +77,9 @@ function OurPartners() {
 
           <div className=" mt-8">
             <Slider {...settings}>
-              {partnersData.map((d) => {
+              {partnersData.map((d, i) => {
                 return (
-                  <div className="relative">
+                  <div key={i} className="relative">
                     <Image
                       className="aspect-[6/6] mx-auto"
                       width={106}
