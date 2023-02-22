@@ -6,6 +6,7 @@ import PropertiesByCities from "@/components/propertiesByCities/PropertiesByCiti
 import TestimonialSlider from "@/components/home/testimonialSlider/TestimonialSlider";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import OurPartners from "@/components/home/OurPartners";
+import BecomeAgent from "@/components/home/BecomeAgent";
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +18,7 @@ export default function Home() {
       <PropertiesByCities />
       <WhyChooseUs />
       <OurPartners />
+      <BecomeAgent />
     </Layout>
   );
 }

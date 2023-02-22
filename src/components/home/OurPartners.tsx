@@ -69,7 +69,7 @@ function OurPartners() {
   return (
     <>
       <div className="bg-white py-12">
-        <div className="container px-6 mx-auto">
+        <div className="lg:container px-6 mx-auto">
           <Title title="Our Partners" />
           <p className="text-center">
             We only work with the best companies around the globe
@@ -81,7 +81,7 @@ function OurPartners() {
                 return (
                   <div className="relative">
                     <Image
-                      className="aspect-[6/6]"
+                      className="aspect-[6/6] mx-auto"
                       width={106}
                       height={106}
                       quality={100}
