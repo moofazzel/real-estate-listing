@@ -25,13 +25,13 @@ function OurPartners() {
     adaptiveHeight: true,
     dots: false,
     infinite: true,
-    speed: 2500,
+    speed: 2000,
     slidesToShow: 5,
 
     slidesToScroll: 1,
     autoplay: true,
     arrows: false,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 1024,
