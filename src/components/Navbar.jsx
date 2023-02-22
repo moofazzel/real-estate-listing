@@ -63,8 +63,8 @@ function Navbar() {
       {/* Navbar */}
       <div
         className={`${
-          navCustom ? "bg-white shadow-lg h-20" : "xl:bg-transparent h-32"
-        }  w-full px-4 md:px-8 py-3.5 pt-5 fixed top-0 z-50 transition-all duration-500`}
+          navCustom ? "bg-white shadow-lg max-h-24 " : "xl:bg-transparent h-32"
+        }  w-full px-4 md:px-8 py-5 fixed top-0 z-50 transition-all duration-500`}
       >
         <div className="flex justify-between items-center relative container">
           {/* Mobile menu button */}
@@ -103,7 +103,11 @@ function Navbar() {
                   Login/Register
                 </Link>
               </div>
-              <button className="flex gap-1.5 items-center px-[30px] py-3 rounded-full bg-white text-main  hover:bg-main hover:text-white hover:border-current transition-all duration-200">
+              <button
+                className={` ${
+                  navCustom && "border-2 border-main"
+                } flex gap-1.5 items-center px-[30px] py-3 rounded-full bg-white text-main  hover:bg-main hover:text-white hover:border-current transition-all duration-200`}
+              >
                 <AiOutlinePlus className=" text-xl " />
                 <span className="text-sm font-bold">Submit Property</span>
               </button>
