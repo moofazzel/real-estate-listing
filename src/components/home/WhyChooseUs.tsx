@@ -52,7 +52,7 @@ function WhyChooseUs() {
         },
       },
       {
-        breakpoint: 425,
+        breakpoint: 550,
         settings: {
           dots: true,
           slidesToShow: 1,
@@ -61,15 +61,14 @@ function WhyChooseUs() {
         },
       },
     ],
-    // fade: true,
   };
 
   return (
     <>
       <div className="bg-bgGrey py-12">
-        <div className="container px-6 mx-auto">
+        <div className="lg:container px-6 mx-auto">
           <Title title="Why Choose Us" />
-          <p className="text-center">We provide full service at every step</p>
+          <p className="text-center">We provide full service at every step </p>
 
           <div className=" mt-8">
             <Slider {...settings}>
