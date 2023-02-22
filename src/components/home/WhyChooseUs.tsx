@@ -61,7 +61,6 @@ function WhyChooseUs() {
         },
       },
     ],
-    // fade: true,
   };
 
   return (
@@ -69,7 +68,7 @@ function WhyChooseUs() {
       <div className="bg-bgGrey py-12">
         <div className="lg:container px-6 mx-auto">
           <Title title="Why Choose Us" />
-          <p className="text-center">We provide full service at every step</p>
+          <p className="text-center">We provide full service at every step </p>
 
           <div className=" mt-8">
             <Slider {...settings}>
