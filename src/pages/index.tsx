@@ -13,6 +13,7 @@ export default function Home() {
       <Banner />
       <FeaturedProperties />
       <PropertiesByCities />
+      <TestimonialSlider />
     </Layout>
   );
 }
