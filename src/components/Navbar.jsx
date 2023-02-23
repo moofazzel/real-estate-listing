@@ -15,8 +15,6 @@ function Navbar() {
     window.scrollY > 20 ? setNavCustom(true) : setNavCustom(false);
   };
 
-  console.log(navCustom);
-
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
     return () => {
@@ -63,7 +61,7 @@ function Navbar() {
       {/* Navbar */}
       <div
         className={`${
-          navCustom ? "bg-white shadow-lg max-h-24 " : "xl:bg-transparent h-32"
+          navCustom ? "bg-white shadow-lg max-h-24 " : "bg-transparent h-32"
         }  w-full px-4 md:px-8 py-5 fixed top-0 z-50 transition-all duration-500`}
       >
         <div className="flex justify-between items-center relative container">
