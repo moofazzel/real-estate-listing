@@ -86,3 +86,36 @@ a {
   border-right: 20px solid transparent;
   border-bottom: 20px solid white;
 }
+
+/*********React Select**********/
+
+.css-qbdosj-Input {
+  padding: 12px 10px !important;
+  border-radius: 8px !important;
+}
+
+.css-1jqq78o-placeholder {
+  color: #a8a3af !important;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-left: 10px !important;
+}
+
+.css-1dimb5e-singleValue {
+  padding-left: 8px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.css-b62m3t-container {
+  text-align: left;
+}
+
+.css-13cymwt-control {
+  border-radius: 8px !important;
+  text-align: left;
+}
+
+.css-1nmdiq5-menu {
+  padding: 15px 10px !important;
+}
