@@ -14,7 +14,9 @@ function Banner() {
           </p>
 
           {/* Filter part */}
-          <FilterBox />
+          <div className="container">
+            <FilterBox />
+          </div>
         </div>
       </div>
     </>
