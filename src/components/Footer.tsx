@@ -1,3 +1,4 @@
+import logo_white from "../../public/logo_white.png";
 import Image from "next/image";
 import Link from "next/link";
 import { BiRightArrow } from "react-icons/bi";
@@ -10,14 +11,8 @@ function Footer() {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 sm:w-2/3 lg:w-[30%]">
               <div className="mb-6 w-full">
-                <Link href="/" className="mb-1 inline-block max-w-[160px]">
-                  <Image
-                    src="/public/logo.svg"
-                    width={80}
-                    height={80}
-                    alt="logo"
-                    className="max-w-full"
-                  />
+                <Link href="/" className="mb-3 inline-block max-w-[160px] ">
+                  <Image src={logo_white} alt="#" className="max-w-full" />
                 </Link>
                 <p className="text-body-color mb-7 text-base">
                   We’re reimagining how you buy, sell and rent. It’s now easier
