@@ -23,6 +23,7 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.43.2",
     "react-icons": "^4.7.1",
+    "react-modal": "^3.16.1",
     "react-select": "^5.7.0",
     "react-slick": "^0.29.0",
     "react-tabs": "^6.0.0",

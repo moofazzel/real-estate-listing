@@ -2,6 +2,8 @@ import Link from "next/link";
 import { HiDotsVertical } from "react-icons/hi";
 import { useForm } from "react-hook-form";
 import SelectedDropdown from "../shared/SelectDropdown";
+import AdvancedFilterModal from "./AdvancedFilter";
+import AdvancedFilter from "./AdvancedFilter";
 
 function FilterBox() {
   const {
@@ -34,7 +36,7 @@ function FilterBox() {
         <div className="bg-[#ffffff33] p-4 rounded-lg">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="bg-white p-5 rounded-lg "
+            className="bg-white p-5 rounded-lg relative"
           >
             <div className="flex flex-col lg:flex-row gap-4 ">
               <input
@@ -86,6 +88,11 @@ function FilterBox() {
                 </button>
               </div>
             </div>
+            <>
+              <div className=" w-full container absolute left-0 -bottom-14">
+                <AdvancedFilter />
+              </div>
+            </>
           </form>
         </div>
       </div>
