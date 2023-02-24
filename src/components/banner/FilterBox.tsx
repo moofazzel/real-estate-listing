@@ -13,6 +13,14 @@ function FilterBox() {
   const onSubmit = (data: {}) => console.log(data);
 
   const propertyOptions = [
+    { value: "apartment", label: "Apartment" },
+    { value: "condo", label: "Condo" },
+    { value: "familyHouse", label: "Family House" },
+    { value: "modern Vila", label: "Modern Vila" },
+    { value: "townHouse", label: "Town House" },
+  ];
+
+  const roomOptions = [
     { value: "1", label: "1+" },
     { value: "2", label: "2+" },
     { value: "3", label: "3+" },
@@ -32,33 +40,38 @@ function FilterBox() {
               <input
                 type="text"
                 id="first_name"
-                className="lg:w-1/4 bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus-visible:border-0 block w-full p-4 px-5"
+                className=" w-full lg:w-[25%] bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus-visible:border-0 block p-4 px-5"
                 placeholder="Enter Search Keyword..."
                 {...register("keyword")}
               />
 
-              <SelectedDropdown
-                placeholder={"Property Type"}
-                selectedOptions={propertyOptions}
-              />
+              <div className="lg:w-[25%]">
+                <SelectedDropdown
+                  placeholder={"Property Type"}
+                  selectedOptions={propertyOptions}
+                />
+              </div>
 
-              <div className="action-location">
+              <div className="action-location lg:w-[25%]">
                 <input
                   type="text"
                   name="filter-center-location"
-                  className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus-visible:border-0 block w-full p-4 px-5"
+                  className=" w-full bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus-visible:border-0 block p-4 px-5"
                   value=""
                   placeholder="Location"
                   autoComplete="off"
                 />
               </div>
 
-              <SelectedDropdown
-                placeholder={"Rooms"}
-                selectedOptions={propertyOptions}
-              />
+              <div className="lg:w-[25%]">
+                {" "}
+                <SelectedDropdown
+                  placeholder={"Rooms"}
+                  selectedOptions={roomOptions}
+                />
+              </div>
 
-              <div className="lg:w-1/4 flex items-center gap-4 ">
+              <div className="flex lg:w-[25%] items-center gap-4 ">
                 <Link
                   className="flex items-center gap-3 text-base font-bold hover:text-main"
                   href={"#"}
