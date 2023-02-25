@@ -1,4 +1,4 @@
-import Footer from "../Footer";
+import Footer from "../home/footer/Footer";
 import Navbar from "../Navbar";
 
 interface LayoutProps {
