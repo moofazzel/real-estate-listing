@@ -93,10 +93,10 @@ function FilterBox() {
                 className={` ${
                   visible
                     ? "h-80 overflow-hidden opacity-100"
-                    : "h-0 opacity-0 overflow-hidden"
-                } container absolute left-0 mt-12 lg:top-20 transition-all duration-500`}
+                    : "h-0 opacity-75 overflow-hidden"
+                } container absolute left-0 mt-12 lg:top-20 transition-all duration-700`}
               >
-                {visible && <AdvancedFilter />}
+                {<AdvancedFilter />}
               </div>
             </>
           </form>
