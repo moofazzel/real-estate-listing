@@ -2,6 +2,7 @@ import Image from "next/image";
 import cl1 from "../../../../public/assets/testimonial-sl-image/cl1.png";
 import { FaQuoteLeft } from "react-icons/fa";
 import Slider from "react-slick";
+import Title from "@/components/shared/Title";
 
 const TestimonialSlider = () => {
   var settings = {
@@ -45,6 +46,8 @@ const TestimonialSlider = () => {
   return (
     <section className="py-14 lg:py-20 bg-gray-50">
       <div className="container mx-auto">
+        <Title title="Testimonials" />
+        <p className="text-center mb-5">Here could be a nice sub title</p>
         <Slider {...settings}>
           <div className="flex items-center justify-center flex-col">
             <div className="text-center ">
