@@ -1,9 +1,12 @@
 import Link from "next/link";
 import { HiDotsVertical } from "react-icons/hi";
 import { useForm } from "react-hook-form";
-import SelectedDropdown from "../shared/SelectDropdown";
+import SelectDropdown from "../shared/SelectDropdown";
+import AdvancedFilter from "./AdvancedFilter";
+import { useState } from "react";
 
 function FilterBox() {
+  const [visible, setVisible] = useState(false);
   const {
     register,
     handleSubmit,
@@ -30,11 +33,11 @@ function FilterBox() {
 
   return (
     <>
-      <div className="containers px-10">
+      <div className="px-4 lg:px-0">
         <div className="bg-[#ffffff33] p-4 rounded-lg">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="bg-white p-5 rounded-lg "
+            className="bg-white p-5 rounded-lg relative"
           >
             <div className="flex flex-col lg:flex-row gap-4 ">
               <input
@@ -46,7 +49,7 @@ function FilterBox() {
               />
 
               <div className="lg:w-[25%]">
-                <SelectedDropdown
+                <SelectDropdown
                   placeholder={"Property Type"}
                   selectedOptions={propertyOptions}
                 />
@@ -64,20 +67,19 @@ function FilterBox() {
               </div>
 
               <div className="lg:w-[25%]">
-                {" "}
-                <SelectedDropdown
+                <SelectDropdown
                   placeholder={"Rooms"}
                   selectedOptions={roomOptions}
                 />
               </div>
 
-              <div className="flex lg:w-[25%] items-center gap-4 ">
-                <Link
-                  className="flex items-center gap-3 text-base font-bold hover:text-main"
-                  href={"#"}
-                >
+              <div
+                onClick={() => setVisible(!visible)}
+                className="flex lg:w-[25%] items-center gap-4 "
+              >
+                <button className="flex items-center gap-3 text-base font-bold hover:text-main">
                   Advanced <HiDotsVertical />
-                </Link>
+                </button>
                 <button
                   className="bg-main text-base font-bold text-white px-8 py-2.5 rounded-lg border-2 border-white hover:bg-white hover:border-2 hover:text-main hover:border-main transition-all duration-300"
                   type="submit"
@@ -86,6 +88,15 @@ function FilterBox() {
                 </button>
               </div>
             </div>
+            <>
+              <div
+                className={` ${
+                  visible ? "h-80 overflow-hidden" : "h-0 overflow-hidden"
+                } container absolute left-0 mt-12 lg:top-20 transition-all duration-500`}
+              >
+                {visible && <AdvancedFilter />}
+              </div>
+            </>
           </form>
         </div>
       </div>
