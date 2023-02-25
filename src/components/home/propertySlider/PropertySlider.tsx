@@ -1,3 +1,4 @@
+import Title from "@/components/shared/Title";
 import SingleProperty from "@/components/singleProperty/SingleProperty";
 import Slider from "react-slick";
 
@@ -43,7 +44,10 @@ const PropertySlider = () => {
   };
 
   return (
-    <div>
+    <>
+      <Title title="Featured Properties" />
+      <p className="text-center mb-5">Handpicked properties by our team</p>
+
       <Slider {...settings}>
         <SingleProperty />
         <SingleProperty />
@@ -52,7 +56,7 @@ const PropertySlider = () => {
         <SingleProperty />
         <SingleProperty />
       </Slider>
-    </div>
+    </>
   );
 };
 
