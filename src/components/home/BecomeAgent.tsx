@@ -11,7 +11,7 @@ function BecomeAgent() {
           </p>
         </div>
         <div>
-          <button className="text-base font-bold text-white bg-[#FF787C] px-10 py-2 md:py-3 rounded-md">
+          <button className="text-base font-bold text-white bg-[#FF787C] px-10 py-2 md:py-3 rounded-md hover:bg-white hover:text-main transition-all duration-300">
             Register Now
           </button>
         </div>
