@@ -91,7 +91,9 @@ function FilterBox() {
             <>
               <div
                 className={` ${
-                  visible ? "h-80 overflow-hidden" : "h-0 overflow-hidden"
+                  visible
+                    ? "h-80 overflow-hidden opacity-100"
+                    : "h-0 opacity-0 overflow-hidden"
                 } container absolute left-0 mt-12 lg:top-20 transition-all duration-500`}
               >
                 {visible && <AdvancedFilter />}
