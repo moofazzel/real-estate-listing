@@ -19,8 +19,8 @@ export default function Home() {
       <PropertiesByCities />
       <WhyChooseUs />
       <TestimonialSlider />
-      <OurPartners />
       <ArticlesTips />
+      <OurPartners />
       <BecomeAgent />
     </Layout>
   );

@@ -126,9 +126,6 @@ const PropertySlider = () => {
 
   return (
     <>
-      <Title title="Articles & Tips" />
-      <p className="text-center mb-5">Handpicked properties by our team</p>
-
       <section className="py-14 md:py-20 bg-[#f7f7f7]">
         <div className="container">
           <Title title="Articles & Tips" />
