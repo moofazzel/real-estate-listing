@@ -22,7 +22,6 @@ function Navbar() {
     };
   }, []);
 
-  console.log(logo);
   const menuItems = (
     <>
       <Link className="navHover hover:text-main" href={"/"}>

@@ -44,7 +44,7 @@ const TestimonialSlider = () => {
     // fade: true,
   };
   return (
-    <section className="py-14 lg:py-20 bg-gray-50">
+    <section className="py-14 lg:py-20 bg-white">
       <div className="container mx-auto">
         <Title title="Testimonials" />
         <p className="text-center mb-5">Here could be a nice sub title</p>
