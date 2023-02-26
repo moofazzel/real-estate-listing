@@ -75,16 +75,19 @@ function OurPartners() {
             We only work with the best companies around the globe
           </p>
 
-          <div className=" mt-8">
+          <div className=" mt-8 ">
             <Slider {...settings}>
               {partnersData.map((d, i) => {
                 return (
                   <div key={i} className="relative">
                     <Image
-                      className="aspect-[6/6] mx-auto"
-                      width={106}
-                      height={106}
-                      quality={100}
+                      style={{
+                        objectFit: "cover",
+                        objectPosition: "center",
+                      }}
+                      className="mx-auto"
+                      width={80}
+                      height={72}
                       src={d.icon}
                       alt=""
                     />

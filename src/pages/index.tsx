@@ -7,6 +7,7 @@ import TestimonialSlider from "@/components/home/testimonialSlider/TestimonialSl
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import OurPartners from "@/components/home/OurPartners";
 import BecomeAgent from "@/components/home/BecomeAgent";
+import ArticlesTips from "@/components/home/articlesAndTips/ArticlesTips";
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,7 @@ export default function Home() {
       <WhyChooseUs />
       <TestimonialSlider />
       <OurPartners />
+      <ArticlesTips />
       <BecomeAgent />
     </Layout>
   );
