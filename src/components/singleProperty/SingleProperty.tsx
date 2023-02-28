@@ -22,7 +22,7 @@ const SingleProperty = ({ featuredProperty }) => {
   } = featuredProperty;
   return (
     <div className="border border-gray-300 rounded-lg">
-      <div className="m-3 relative rounded-md z-10">
+      <div className="m-3 relative rounded-md z-0">
         <div className="relative">
           <Image
             src={image}
