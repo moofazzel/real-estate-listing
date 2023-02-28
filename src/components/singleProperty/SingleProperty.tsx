@@ -3,9 +3,8 @@ import Image from "next/image";
 
 import { RiHeart2Line } from "react-icons/ri";
 import { BiTransfer } from "react-icons/bi";
-import Link from "next/link";
 
-const SingleProperty = ({ featuredProperty }) => {
+const SingleProperty = ({ featuredProperty }: any) => {
   const {
     title,
     type,

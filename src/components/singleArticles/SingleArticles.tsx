@@ -1,22 +1,7 @@
 import Image from "next/image";
-import articleImg from "../../../public/assets/images/articles/sl1.jpg";
-import agentImage from "../../../public/assets/images/agents/ag2.png";
 
-const SingleArticles = ({ articlesProperty }) => {
-  const {
-    title,
-    type,
-    image,
-    price,
-    location,
-    area,
-    beds,
-    baths,
-    status,
-    advertised,
-    posted,
-    profile,
-  } = articlesProperty;
+const SingleArticles = ({ articlesProperty }: any) => {
+  const { title, type, image, posted, profile } = articlesProperty;
   return (
     <div className="border border-gray-300 rounded-lg group hover:cursor-pointer hover:shadow-md">
       <div className="m-3 relative rounded-md z-10">

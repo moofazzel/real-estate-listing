@@ -9,7 +9,7 @@ import Link from "next/link";
 
 function PropertiesByCities() {
   interface PropertiesAndCities {
-    image: object;
+    image: { src: string };
     city: string;
     properties: number;
   }
@@ -51,7 +51,7 @@ function PropertiesByCities() {
                   key={i}
                   className="flex justify-center items-end rounded-xl overflow-hidden transition-all duration-500 group h-[250px] xl:h-[350px] "
                   style={{
-                    backgroundImage: "url(" + city.image.src + ")",
+                    backgroundImage: `url(${city.image.src})`,
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center",
                     backgroundSize: "100%",
