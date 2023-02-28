@@ -241,8 +241,8 @@ function Footer() {
                   y2="1.22829e-05"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#3056D3" stop-opacity="0.08" />
-                  <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+                  <stop stop-color="#3056D3" stopOpacity="0.08" />
+                  <stop offset="1" stop-color="#C4C4C4" stopOpacity="0" />
                 </linearGradient>
               </defs>
             </svg>
@@ -268,8 +268,8 @@ function Footer() {
                   y2="37.5"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#13C296" stop-opacity="0.31" />
-                  <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+                  <stop stop-color="#13C296" stopOpacity="0.31" />
+                  <stop offset="1" stop-color="#C4C4C4" stopOpacity="0" />
                 </linearGradient>
               </defs>
             </svg>
