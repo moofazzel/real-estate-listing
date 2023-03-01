@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -12,6 +12,38 @@ import MobileMenu from "./MobileMenu";
 
 function Navbar() {
   const [navCustom, setNavCustom] = useState(false);
+
+  // side mobile menu
+  const navRef = useRef();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const checkIfClickedOutside = (e) => {
+      // If the menu is open and the clicked target is not within the menu,
+      // then close the menu
+      if (isMenuOpen && navRef.current && !navRef.current.contains(e.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    //Stop scrolling when menu is open
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+      document.body.style.cursor = "not-allowed";
+    } else {
+      document.body.style.overflow = "auto";
+      document.body.style.cursor = "auto";
+    }
+
+    document.addEventListener("mousedown", checkIfClickedOutside);
+
+    return () => {
+      // Cleanup the event listener
+      document.removeEventListener("mousedown", checkIfClickedOutside);
+    };
+  }, [isMenuOpen]);
+
+  // side mobile menu end
   const listenScrollEvent = () => {
     window.scrollY > 20 ? setNavCustom(true) : setNavCustom(false);
   };
@@ -68,7 +100,10 @@ function Navbar() {
         >
           <div className="flex justify-between items-center relative container">
             {/* Mobile menu button */}
-            <button className="text-white bg-main p-2 text-2xl rounded xl:hidden hover:bg-red-600 transition-all ">
+            <button
+              onClick={() => setIsMenuOpen((oldState) => !oldState)}
+              className="text-white bg-main p-2 text-2xl rounded xl:hidden hover:bg-red-600 transition-all "
+            >
               <FaBars />
             </button>
 
@@ -123,9 +158,17 @@ function Navbar() {
             </button>
           </div>
         </div>
+
         {/* Mobile menu */}
-        <div className="absolute top-0 left-0 w-11/12 z-50 h-full ">
-          {/* <MobileMenu menuItems={menuItems} /> */}
+
+        <div
+          ref={navRef}
+          className={` ${
+            isMenuOpen ? "w-11/12 opacity-100" : "w-0 opacity-0"
+          } fixed top-0 left-0  z-50 overflow-hidden transition-all duration-300`}
+        >
+          {<MobileMenu menuItems={menuItems} />}
+          {/* {isMenuOpen && <MobileMenu menuItems={menuItems} />} */}
         </div>
       </div>
     </>
