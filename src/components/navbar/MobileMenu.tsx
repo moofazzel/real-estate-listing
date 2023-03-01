@@ -1,4 +1,4 @@
-import { AiOutlineUser, AiOutlinePlus } from "react-icons/Ai";
+import { AiOutlinePlus } from "react-icons/Ai";
 
 function MobileMenu({ menuItems }: { menuItems: JSX.Element[] }) {
   return (
