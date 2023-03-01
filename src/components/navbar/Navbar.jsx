@@ -6,7 +6,7 @@ import Link from "next/link";
 import logo_white from "../../../public/logo_white.png";
 import logo from "../../../public/logo.svg";
 
-import { AiOutlineUser, AiOutlinePlus } from "react-icons/Ai";
+import { BiPlus, BiUser } from "react-icons/bi";
 import { FaBars, FaUser, FaCaretDown } from "react-icons/fa";
 import MobileMenu from "./MobileMenu";
 
@@ -133,7 +133,7 @@ function Navbar() {
               </nav>
               <div className="text-md flex gap-7 justify-between items-center">
                 <div className="flex gap-1 items-center justify-center border-l-[1px] pl-5">
-                  <AiOutlineUser className="text-2xl" />
+                  <BiUser className="text-2xl" />
                   <Link href={"#"} className="text-base">
                     Login/Register
                   </Link>
@@ -143,7 +143,7 @@ function Navbar() {
                     navCustom && "border-2 border-main"
                   } flex gap-1.5 items-center px-[30px] py-3 rounded-full bg-white text-main  hover:bg-main hover:text-white hover:border-current transition-all duration-200`}
                 >
-                  <AiOutlinePlus className=" text-xl " />
+                  <BiPlus className=" text-xl " />
                   <span className="text-sm font-bold">Submit Property</span>
                 </button>
               </div>
