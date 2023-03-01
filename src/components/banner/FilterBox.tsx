@@ -43,7 +43,7 @@ function FilterBox() {
               <input
                 type="text"
                 id="first_name"
-                className=" w-full lg:w-[25%] bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus-visible:border-0 block p-4 px-5"
+                className=" w-full lg:w-[25%] bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus-visible:border-0 block p-4 px-5 focus-visible:outline-blue-500"
                 placeholder="Enter Search Keyword..."
                 {...register("keyword")}
               />
@@ -55,16 +55,13 @@ function FilterBox() {
                 />
               </div>
 
-              <div className="action-location lg:w-[25%]">
-                <input
-                  type="text"
-                  name="filter-center-location"
-                  className=" w-full bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus-visible:border-0 block p-4 px-5"
-                  value=""
-                  placeholder="Location"
-                  autoComplete="off"
-                />
-              </div>
+              <input
+                type="text"
+                id="location"
+                className=" w-full lg:w-[25%] bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus-visible:border-0 focus-visible:outline-blue-500 block p-4 px-5"
+                placeholder="location"
+                {...register("location")}
+              />
 
               <div className="lg:w-[25%]">
                 <SelectDropdown
