@@ -111,13 +111,11 @@ a {
   text-align: left;
 }
 
-.css-13cymwt-control {
+.css-13cymwt-control,
+.css-t3ipsp-menu {
   border-radius: 8px !important;
   text-align: left;
-}
-
-.css-1nmdiq5-menu {
-  padding: 15px 10px !important;
+  min-height: 23px !important;
 }
 
 .css-1u9des2-indicatorSeparator {
