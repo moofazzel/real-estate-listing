@@ -1,4 +1,4 @@
-import { AiOutlinePlus } from "react-icons/Ai";
+import { BiPlus } from "react-icons/bi";
 
 function MobileMenu({ menuItems }: { menuItems: JSX.Element[] }) {
   return (
@@ -12,7 +12,7 @@ function MobileMenu({ menuItems }: { menuItems: JSX.Element[] }) {
             {menuItems}
           </div>
           <button className="flex gap-1.5 justify-center items-center px-[30px] py-3 mb-4 md:mb-0 rounded-full text-white  bg-main hover:bg-red-600 transition-all duration-200">
-            <AiOutlinePlus className=" text-xl " />
+            <BiPlus className=" text-xl " />
             <span className="text-sm font-bold">Submit Property</span>
           </button>
         </div>
